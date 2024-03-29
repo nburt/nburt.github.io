@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Nathanael Burt | {{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="generator" content="Jekyll v4.3.3">
+    <meta property="og:title" content="Includes">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="{{page.description}}">
+    <meta property="og:description" content="{{page.description}}">
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
+    <meta property="og:site_name" content="Nathanael Burt | Software and Product Consultant">
+    <meta property="og:image" content="{{site.url}}/assets/images/profile.jpeg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3acc71e990154ea68aa6bc64d357360a"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+{% include header.html %}
+<div class="content-wrapper">
+    <main class="content">
+        {{ content }}
+    </main>
+</div>
+{% include footer.html %}
+</body>
+</html>

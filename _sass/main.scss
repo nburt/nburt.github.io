@@ -1,0 +1,193 @@
+// Variables
+$base-unit: 0.25rem;
+$base-font-size: 1rem;
+$primary-font: Gill sans-serif;
+$black: #212427;
+$white: #F8F8F8;
+$gray: #F2F2F2;
+$green: #02730A;
+
+// Typography
+body {
+  background-color: $gray;
+  font-family: $primary-font;
+  font-size: $base-font-size;
+  color: $black;
+  line-height: 1.25;
+}
+
+p {
+  margin-bottom: $base-unit * 2;
+}
+
+h1 {
+  font-size: $base-font-size * 2.5;
+  margin-bottom: $base-unit * 6;
+}
+
+h2 {
+  font-size: $base-font-size * 2.25;
+  margin-bottom: $base-unit * 4;
+}
+
+h3 {
+  font-size: $base-font-size * 2;
+  margin-bottom: $base-unit * 3;
+}
+
+h4 {
+  font-size: $base-font-size * 1.75;
+  margin-bottom: $base-unit * 2;
+}
+
+h5 {
+  margin-bottom: $base-unit * 2;
+}
+
+h6 {
+  font-size: $base-font-size * 1.25;
+  margin-bottom: $base-unit * 2;
+}
+
+// Utilities
+.center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer-top {
+  margin-top: $base-unit*4;
+}
+
+// Layout
+.header {
+  padding: $base-unit*4;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  flex: 1;
+  border-bottom: $base-unit/4 solid $black;
+  padding-bottom: $base-unit*4;
+}
+
+.brand-title {
+  font-size: $base-font-size*1.5;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.nav-link {
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $black;
+
+    &:visited {
+      color: $black;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  max-width: 900px;
+  padding: 0 $base-unit*4;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: $base-unit*4;
+}
+
+.footer-content {
+  border-top: $base-unit/4 solid $black;
+  padding-top: $base-unit*4;
+  flex: 1;
+  max-width: 900px;
+  text-align: center;
+}
+
+.social-link {
+  display: inline-block;
+}
+
+.social-icon {
+  height: $base-unit*4;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $base-unit*4;
+}
+
+.col {
+  flex: 1 1 350px;
+}
+
+.profile-image {
+  height: 300px;
+  border-radius: 50%;
+}
+
+.section {
+  margin-bottom: $base-unit*4;
+}
+
+.badges-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  border: $base-unit/4 solid $black;
+  color: $black;
+  padding: $base-unit*2 $base-unit*4;
+  margin: $base-unit;
+  border-radius: $base-unit;
+}
+
+.cta-button {
+  display: inline-block;
+  border: $base-unit/4 solid $green;
+  background-color: $green;
+  color: $white;
+  padding: $base-unit*2 $base-unit*4;
+  border-radius: $base-unit;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: $white;
+    border: $base-unit/4 solid lighten($green, 5);
+    background-color: lighten($green, 5);
+    text-decoration: none;
+  }
+}

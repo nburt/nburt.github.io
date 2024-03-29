@@ -1,0 +1,101 @@
+---
+layout: main
+title: Home
+description: This is the home page.
+---
+
+<section class="section row">
+    <div class="col flex-center">
+        <h1>
+            Technology consultant with 10+ years of experience in software development, product management,
+            hardware integration, and operations.
+        </h1>
+    </div>
+    <div class="col flex-center">
+        <img class="profile-image" src="/assets/images/profile.jpeg" alt="Photo of Nathanael Burt">
+    </div>
+</section>
+<section class="section row">
+    <div class="col">
+        <h2>How I Work</h2>
+        <p>
+            I work with small to medium-sized companies to generate new business or streamline existing operations. I
+            have experience building backend, frontend, and IoT applications from the ground up, as
+            well as leading product strategy across software and hardware engineering teams.
+        </p>
+        <p>
+            With experience in operations, I always focus on understanding your business objectives before
+            identifying the technology strategy. Trust and communication are important and I won't ever pitch you on
+            a solution I don't believe your business needs. If I think you can accomplish your goals with a spreadsheet
+            instead of a shiny new website, I'll tell you that.
+        </p>
+        <p>
+            I believe in agile product development, without being dogmatic about it. I write tests, continuously deploy,
+            communicate, and incorporate customer feedback every step of the way with my clients to ensure that the
+            product we build together solves user needs and moves the needle for your business.
+        </p>
+        <a class="cta-button spacer-top" href="https://www.linkedin.com/in/nathanaelburt/" target="_blank">My LinkedIn</a>
+    </div>
+</section>
+<section class="section row">
+    <div class="col">
+        <h2>Technologies</h2>
+        <div class="row">
+            <div class="col">
+                <p>
+                    I have experience with many languages, frameworks, cloud infrastructure providers, and project
+                    management tools. I will work with you to select the right technology stack based on your business
+                    needs. I pride myself on learning new technologies quickly and I'm confident in my ability to adapt
+                    to your existing stack and create the right solution.
+                </p>
+                <p>
+                    These are just a few of the different technologies I've worked with in the past.
+                </p>
+            </div>
+            <div class="col">
+                <div class="badges-group">
+                    {% for technology in site.data.technologies %}
+                    <div class="badge">{{technology}}</div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row spacer-top">
+            <div class="col">
+                <a class="cta-button" href="https://github.com/nburt" target="_blank">My Github</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section row">
+    <div class="col">
+        <h2>Services</h2>
+        <div class="row">
+            <div class="col">
+                <p>
+                    I offer a variety of services tailored to your needs. I provide hands-on coding and software
+                    development, can work with you to develop a product and technology strategy for your software or
+                    hardware product, and have extensive experience developing and conducting technical interviews. As
+                    an experienced manager, I also love to coach teams and can help develop future leaders within your
+                    engineering organization.
+                </p>
+            </div>
+            <div class="col">
+                <div class="badges-group">
+                    <div class="badge">Software development</div>
+                    <div class="badge">Software product strategy</div>
+                    <div class="badge">Hardware product strategy</div>
+                    <div class="badge">Technical interviewing</div>
+                    <div class="badge">Engineering team coaching</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section row center spacer-top">
+    <div class="col">
+        <p>Have questions or an upcoming project?</p>
+        <a href="/contact" class="cta-button">Let's Talk!</a>
+    </div>
+</section>
+

@@ -152,8 +152,12 @@ h6 {
 }
 
 .profile-image {
-  height: 300px;
-  border-radius: 50%;
+  height: 250px;
+  @media (min-device-width: 420px) {
+    height: 300px;
+  }
+
+  border-radius: $base-unit;
 }
 
 .section {
